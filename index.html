@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Serraflix</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand text-white" href="#"
+          >SerraFlix<span style="color: red">.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Trailers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Notícias</a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Sobre</a></li>
+          </ul>
+
+          <form class="d-flex ms-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar filmes"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner rounded-3 shadow-sm">
+          <div class="carousel-item active">
+            <img src="jogo.jpg" class="d-block w-100" alt="Destaque 1" />
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Notícia em destaque</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur eius odit necessitatibus, quasi alias sunt soluta? Culpa
+                iure fugit odio, tempora ea consequuntur rerum hic animi! Nisi
+                exercitationem atque ut?
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="missao.jpg" class="d-block w-100" alt="Destaque 2" />
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Trailer</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+                non magnam. Cupiditate quae fugit soluta itaque laborum ipsam
+                suscipit optio maiores fugiat! Sit reiciendis, pariatur autem
+                inventore molestias quas iure!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Kong.jpg" class="d-block w-100" alt="Destaque 3" />
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h5>Critica</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias libero explicabo accusantium, iure nemo distinctio in.
+                Aspernatur mollitia expedita, vel maiores voluptate inventore
+                dolorem enim laudantium atque ut sapiente rerum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#homeCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#homeCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+
+      <!-- LAYOUT PRINCIPAL: notícias + lateral -->
+      <div class="row mt-4 justify-content-center">
+        <div class="col-lg-8">
+          <h4>Últimas notícias</h4>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card news-card">
+                <img
+                  src="recomendados.png"
+                  class="card-img-top"
+                  alt="Recomendados"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Filmes recomendados</h5>
+                  <p class="card-text">
+                    Lista de filmes recomendados
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card news-card">
+                <img src="OScar.jpg" class="card-img-top" alt="Oscar" />
+                <div class="card-body">
+                  <h5 class="card-title">Vencedor do oscar</h5>
+                  <p class="card-text">
+                    Resumo curto sobre o conteúdo da página.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card news-card">
+                <img
+                  src="corra.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crítica recente</h5>
+                  <p class="card-text">Pequeno resumo da crítica publicada.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card news-card">
+                <img
+                  src="maisassitidos.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Destaque de streaming</h5>
+                  <p class="card-text">Mais assistidos no mês</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <aside class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h6 class="card-title">Mais esperados</h6>
+              <ul class="list-unstyled">
+                <li>- Filme A</li>
+                <li>- Filme B</li>
+                <li>- Filme C</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">Streaming</h6>
+              <p>Acesse conteúdos por plataforma</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-secondary btn-sm">
+                  Netflix
+                </button>
+                <button class="btn btn-outline-secondary btn-sm">Prime</button>
+                <button class="btn btn-outline-secondary btn-sm">
+                  Disney+
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside> -->
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>SerraFlix</h5>
+            <p>Notícias, críticas e trailers sobre filmes.</p>
+          </div>
+          <div class="col-md-4">
+            <h6>Seções</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Filmes</a></li>
+              <li><a href="#">Trailers</a></li>
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Sobre</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>Contato</h6>
+            <p>Email: contato@serraflix.com</p>
+          </div>
+        </div>
+        <hr style="border-color: rgba(255, 255, 255, 0.06)" />
+        <div class="text-center small">
+          © 2025 SerraFlix — uso apenas demonstrativo
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

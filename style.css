@@ -1,0 +1,53 @@
+body {
+  background: #f5f6f8;
+}
+
+
+.site-header {
+  background: #0d1b2a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.site-header .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 320px;
+  width: 100%;
+}
+
+#homeCarousel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.news-card img {
+  height: 140px;
+  object-fit: cover;
+  align-items: center;
+}
+
+.footer {
+  background: #081227;
+  color: #c8d5e0;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #c8d5e0;
+  text-decoration: none;
+}
+
+
+/* @media (max-width: 576px) {
+  .carousel-item img {
+    height: 220px;
+  }
+} */
