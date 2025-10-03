@@ -1,0 +1,149 @@
+/* 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: radial-gradient(
+      1200px 600px at 100% -20%,
+      rgba(11, 79, 108, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at -10% 120%,
+      rgba(11, 79, 108, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(to bottom, #f1f5f9, #e2e8f0);
+  color: #0f172a;
+  line-height: 1.6;
+  padding: 32px 16px 56px;
+} */
+
+/* ====== Bloco About ====== */
+.about {
+ max-width: 900px;
+  width: 60%;         /* 60% da largura da tela */
+  margin: 0 auto;     /* centraliza */
+  padding: 0 16px;
+}
+
+.about__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.about__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #0b4f6c;
+}
+
+.about__subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-top: 8px;
+}
+
+/* ====== Membros ====== */
+.about__member {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(2, 8, 23, 0.05);
+}
+.about__member-canto::after{
+
+  content: '';
+  /* border:1px solid red; */
+  width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   position: absolute;
+   margin-left: -90px;
+   background: linear-gradient(135deg, #0b4f6c, #1294b8);
+
+ z-index: -1;
+}
+
+
+.about__member-text {
+  flex: 1;
+}
+
+.about__member-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.about__member-role {
+  font-size: 0.95rem;
+  color: #0b4f6c;
+  margin-bottom: 8px;
+}
+
+.about__member-bio {
+  color: #475569;
+}
+
+/* Avatar */
+.about__member-avatar {
+  flex: 0 0 120px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0b4f6c, #1294b8);
+  color: #fff;
+  font-weight: 800;
+  font-size: 32px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(11, 79, 108, 0.25);
+  user-select: none;
+   transition: all ease 0.5s;
+}
+.about__member-avatar:hover {
+  box-shadow: 5px 5px 15px black;
+  width: 130px;
+  height: 130px;
+   border-radius: 50%;
+   
+   transition: all ease 0.5s;
+}
+.about__member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* corta sem distorcer */
+   border-radius: 50%;
+}
+
+/* ====== Responsivo ====== */
+@media (max-width: 680px) {
+  .about__member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__member-avatar {
+    width: 100px;
+    height: 100px;
+     
+  }
+
+
+
+
+}
