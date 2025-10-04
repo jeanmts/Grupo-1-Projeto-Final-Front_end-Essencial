@@ -1,0 +1,138 @@
+body {
+  background: #f5f6f8;
+}
+.site-header {
+  background: #0d1b2a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.site-header .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    color: #1a3c40;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: none;
+    margin: 10px auto;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    color: #1a3c40;
+    font-size: 1.4rem;
+}
+
+.card p {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.info-item {
+    background: #f0f7f9;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #2d5d63;
+}
+a {
+    color: inherit; /* Remove a cor azul padrão */
+    text-decoration: none; /* Remove o sublinhado */
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.footer {
+  background: #081227;
+  color: #c8d5e0;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #c8d5e0;
+  text-decoration: none;
+}
+
+.btn-outline-danger {
+    margin: 10px;
+  width: 40%;
+
+}
