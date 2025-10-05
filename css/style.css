@@ -2,7 +2,6 @@ body {
   background: #f5f6f8;
 }
 
-
 .site-header {
   background: #0d1b2a;
   color: #fff;
@@ -27,7 +26,6 @@ body {
   margin: 0 auto;
 }
 
-
 .news-card img {
   height: 140px;
   object-fit: cover;
@@ -44,7 +42,6 @@ body {
   color: #c8d5e0;
   text-decoration: none;
 }
-
 
 /* @media (max-width: 576px) {
   .carousel-item img {

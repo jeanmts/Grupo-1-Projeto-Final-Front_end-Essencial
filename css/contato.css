@@ -1,5 +1,9 @@
 /* ====== Reset ====== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -85,7 +89,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 .contact__form-title {
   margin-bottom: 16px;
@@ -119,4 +123,3 @@ body {
 .form__btn:hover {
   background: #093a4e;
 }
-
