@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="quem-somos.css" />
-    <link rel="stylesheet" href="contato.css">
-   <script src="validaFormulario.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/quem-somos.css" />
+    <link rel="stylesheet" href="./css/contato.css" />
+    <script src="./js/validaFormulario.js" defer></script>
+    <script src="./js/api.js" defer></script>
+
     <title>Serraflix</title>
     <!-- Bootstrap 5 CSS -->
     <link
@@ -36,7 +38,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Filmes</a>
+              <a class="nav-link text-white" href="./index.html">Filmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Trailers</a>
@@ -45,10 +47,12 @@
               <a class="nav-link text-white" href="#">Notícias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Sobre</a>
+              <a class="nav-link text-white" href="./contato.html">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Quem somos</a>
+              <a class="nav-link text-white" href="./quem-somos.html"
+                >Quem somos</a
+              >
             </li>
           </ul>
 
@@ -65,53 +69,78 @@
       </nav>
     </header>
 
-   <!-- Inicio da pagina de contato -->
+    <!-- Inicio da pagina de contato -->
 
- <main class="contact">
-    <section class="contact__header">
-      <h1 class="contact__title">Entre em Contato</h1>
-      <p class="contact__subtitle">Fale com a nossa equipe. Será um prazer atender você!</p>
-    </section>
-
-    <section class="contact__info">
-      <div class="contact__info-item">
-        <h3 class="contact__info-title"> Endereço</h3>
-        <p class="contact__info-text">Rua Exemplo, 123 — Petrópolis, RJ</p>
-      </div>
-      <div class="contact__info-item">
-        <h3 class="contact__info-title"> Telefone</h3>
-        <p class="contact__info-text">(24) 99999-0000</p>
-      </div>
-      <div class="contact__info-item">
-        <h3 class="contact__info-title"> Email</h3>
-        <p class="contact__info-text">contato@serraflix.com</p>
-      </div>
-      <div class="contact__info-item">
-        <h3 class="contact__info-title"> Redes Sociais</h3>
-        <p class="contact__info-text">
-          <a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">Twitter</a>
+    <main class="contact">
+      <section class="contact__header">
+        <h1 class="contact__title">Entre em Contato</h1>
+        <p class="contact__subtitle">
+          Fale com a nossa equipe. Será um prazer atender você!
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact__form">
-      <h2 class="contact__form-title">Envie sua mensagem</h2>
-      <form class="form">
-        <label for="nome" class="form__label">Nome</label> <span id="mensagem-nome"></span>
-        <input type="text" id="nome" class="form__input" placeholder="Digite seu nome" required>
+      <section class="contact__info">
+        <div class="contact__info-item">
+          <h3 class="contact__info-title">Endereço</h3>
+          <p class="contact__info-text">Rua Exemplo, 123 — Petrópolis, RJ</p>
+        </div>
+        <div class="contact__info-item">
+          <h3 class="contact__info-title">Telefone</h3>
+          <p class="contact__info-text">(24) 99999-0000</p>
+        </div>
+        <div class="contact__info-item">
+          <h3 class="contact__info-title">Email</h3>
+          <p class="contact__info-text">contato@serraflix.com</p>
+        </div>
+        <div class="contact__info-item">
+          <h3 class="contact__info-title">Redes Sociais</h3>
+          <p class="contact__info-text">
+            <a href="#">Instagram</a> · <a href="#">Facebook</a> ·
+            <a href="#">Twitter</a>
+          </p>
+        </div>
+      </section>
 
-        <label for="email" class="form__label">Email</label> <span id="mensagem-email"></span>
-        <input type="email" id="email" class="form__input" placeholder="Digite seu email" required>
+      <section class="contact__form">
+        <h2 class="contact__form-title">Envie sua mensagem</h2>
+        <form class="form">
+          <label for="nome" class="form__label">Nome</label>
+          <span id="mensagem-nome"></span>
+          <input
+            type="text"
+            id="nome"
+            class="form__input"
+            placeholder="Digite seu nome"
+            required
+          />
 
-        <label for="mensagem" class="form__label">Mensagem</label> <span id="mensagem-recado"></span>
-        <textarea id="mensagem" class="form__textarea" rows="5" placeholder="Digite sua mensagem"></textarea>
+          <label for="email" class="form__label">Email</label>
+          <span id="mensagem-email"></span>
+          <input
+            type="email"
+            id="email"
+            class="form__input"
+            placeholder="Digite seu email"
+            required
+          />
 
-        <button type="button" onclick="validaCampos()" class="form__btn">Enviar</button>
-      </form>
-    </section>
-  </main>
+          <label for="mensagem" class="form__label">Mensagem</label>
+          <span id="mensagem-recado"></span>
+          <textarea
+            id="mensagem"
+            class="form__textarea"
+            rows="5"
+            placeholder="Digite sua mensagem"
+          ></textarea>
 
-     <!-- Fim da pagina de contato -->
+          <button type="button" onclick="validaCampos()" class="form__btn">
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Fim da pagina de contato -->
 
     <footer class="footer mt-5">
       <div class="container">
